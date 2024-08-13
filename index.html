@@ -7,15 +7,14 @@
     <title>Formulario - Práctica 1</title>
 </head>
 <body>
-    <h2>Formulario. Actividad 1.</h2>
+    <h2>Formulario</h2>
         <form>
-            <label>Nombre: </label><input type="text" placeholder="Ingrese su nombre"><br><br>
-            
-            <label>Apellido: </label><input type="text" placeholder="Ingrese su apellido"><br><br>
-            <label>Mail: </label><input type="text" placeholder="Ingrese su mail"><br><br>
+            <fieldset><legend>Datos personales</legend><label>Nombre: </label><input type="text" placeholder="Ingrese su nombre" required><br><br>
+            <label>Apellido: </label><input type="text" placeholder="Ingrese su apellido" required><br><br>
+            <label>Mail: </label><input type="text" placeholder="Ingrese su mail" required><br><br>
             <label>Fecha de nacimiento: </label><input type="date"><br><br>
-            <label>Pais de residencia: </label><input type="text"><br><br>
-            <input type="submit" value="Enviar">
+            <label>Pais de residencia: </label><input type="text" value="Argentina"><br><br></fieldset>
+            <button type="submit">Enviar</button>
             
         </form>
 </body>
