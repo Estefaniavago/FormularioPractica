@@ -7,15 +7,47 @@
     <title>Formulario - Práctica 1</title>
 </head>
 <body>
-    <h2>Formulario</h2>
-        <form>
-            <fieldset><legend>Datos personales</legend><label>Nombre: </label><input type="text" placeholder="Ingrese su nombre" required><br><br>
-            <label>Apellido: </label><input type="text" placeholder="Ingrese su apellido" required><br><br>
-            <label>Mail: </label><input type="text" placeholder="Ingrese su mail" required><br><br>
-            <label>Fecha de nacimiento: </label><input type="date"><br><br>
-            <label>Pais de residencia: </label><input type="text" value="Argentina"><br><br></fieldset>
-            <button type="submit">Enviar</button>
+    <div class="container">
+        <div id="contenido">
+            <h2 class="title">Formulario</h2>
+    
+            <form id="formulario">
             
+             <fieldset id="contenedor"><legend>Datos personales</legend>
+            
+                <div class="campo">
+                    <label for="nombre">Nombre: </label>
+                    <input name="nombre"id="nombre" type="text" placeholder="Ingrese su nombre" required>
+                </div>
+                
+                <div class="campo">
+                    <label for="apellido">Apellido: </label>
+                    <input name="apellido" id="apellido" type="text" placeholder="Ingrese su apellido" required>
+                </div>
+            
+                <div class="campo">
+                    <label>Mail: </label>
+                    <input name="mail" type="text" placeholder="Ingrese su mail" required id="mail"></div>
+
+                <div class="campo">
+                    <label>Fecha de nacimiento: </label>
+                    <input name="fecha" type="date">
+                </div>
+
+                <div class="campo">
+                    <label>Pais de residencia: </label>
+                    <input name="pais" type="text" value="Argentina">
+                </div>
+            
+                </fieldset>
+            
+            <div class="botones">
+                <button id="submit" type="submit" >Enviar</button>
+                <button type="button" id="contraste">Modo oscuro</button>
+            </div>
         </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,17 +1,56 @@
-form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    ;
-    flex-direction: column;
+*{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
 }
-h2 {text-align: center;
-    color: #c43bff;
+
+.container{
+width: 100%;
+height: 150vh;
+background-color: #d0d0d0;
+display: flex;
+align-items: center;
+justify-content: center;
 
 }
-form{
-    font-family: Verdana;
+
+.contenido{
+    width: 100%;
+    max-width: 400px;
+    background-color: #ca7df4;
+    display: flex;
+    padding: 50px 50px 50px;
+    text-align: center;
+    border-radius: 25px;
+  
 }
+.contenido h2 {
+    font-size: 30;
+    margin-bottom: 60px;
+    color: #c43bff;
+    position: relative;
+}
+
+.campo {
+    background-color: #d598f5;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border-radius: 3px;
+    outline: none;
+    padding: 5px 5px;
+}
+
 
 legend{
     font-size: 20px;
@@ -24,7 +63,9 @@ fieldset {
     box-shadow: 0px 0px 30px rgba(169, 23, 248, 0.2);
     max-width: 400px;
     width: 100%;
-    background-color: #f2c8f5;
+    background-color: #ddadf5;
+    padding: 10px 10px;
+    border-radius: 5px;
 }
 
 label {
@@ -46,5 +87,24 @@ button {
 }
 button:hover {
     background-color: #771894; 
+}
+
+.botones{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botones button{
+    flex-basis: 45%;
+    font-size: 16px;
+    background-color: #c43bff;
+    color: #d0d0d0;
+    height: 60px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    
 }
 
